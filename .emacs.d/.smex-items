@@ -1,0 +1,23 @@
+
+;; ----- smex-history -----
+(
+ sql-mode
+ paredit-mode
+ package-list-packages
+ package-install
+ ielm
+ org-mode
+ cd
+)
+
+;; ----- smex-data -----
+(
+ (package-install . 5)
+ (nrepl . 1)
+ (org-mode . 2)
+ (package-list-packages . 10)
+ (nrepl-jack-in . 10)
+ (ielm . 1)
+ (paredit-mode . 7)
+ (sql-mode . 1)
+)

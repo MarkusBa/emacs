@@ -1,0 +1,19 @@
+(ns liberator-service.routes.home
+  (:require [compojure.core :refer :all]
+            [cheshire.core :refer [generate-string]]
+            [liberator.core
+             :refer [defresource resource request-method-in]]))
+
+(def users (atom ["John" "Jane"]))
+
+
+
+(defresource home 
+  :allowed-methods [:get]
+  :handle-ok "Hello World!"
+  :etag "fixed-etag"
+  :available-media-types ["text/plain"])
+
+(defroutes home-routes
+  (ANY "/" request
+(resource home)))

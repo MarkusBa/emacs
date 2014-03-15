@@ -1,0 +1,21 @@
+(ns ^:shared hw.behavior
+    (:require [clojure.string :as string]
+              [io.pedestal.app :as app]
+              [io.pedestal.app.messages :as msg]))
+
+(defn init-main [_]
+  [[:transform-enable [:greeting] :set-value [{msg/topic :set-value}]]])
+
+(defn set-value-transform [old-value message]
+  (:value message))
+
+(def example-app
+  {:version 2  ;;;op target function
+   :transform [[:set-value [:greeting] set-value-transform]]
+   :emit [{:init init-main}
+          [#{[:*]} (app/default-emitter [])]]
+   })
+
+
+
+

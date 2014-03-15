@@ -1,0 +1,81 @@
+(ns modern-cljs.modern
+  (:use [domina :only [by-id  set-text! value set-value! append! log ]]
+        [domina.css :only [sel]]
+        [domina.events :only [listen! capture! listen-once! capture-once!
+                              unlisten! dispatch-event! dispatch! unlisten-by-key!
+                              get-listeners prevent-default stop-propagation
+                              target current-target event-type raw-event]])
+   (:require
+    [goog.net.XhrIo :as xhr]
+    [cljs.core.async :as async :refer [chan close!]])
+   (:require-macros
+    [cljs.core.async.macros :refer [go alt!]]))
+
+(defn GET [url]
+  (let [ch (chan 1)]
+    (xhr/send url
+              (fn [event]
+                (let [res (-> event .-target .getResponseText)]
+                  (go (>! ch res)
+                      (close! ch)))))
+    ch))
+
+(defn logi [s]
+  (.log js/console (str "test" s)))
+
+
+(go
+  (logi "Delaying ...")
+  (<! (async/timeout 2000))
+  (logi "Sending GET ...")
+  (set-text! (sel "#log") (<! (GET "http://dimagog.github.io/sitemap.txt")))
+  (logi "Finished"))
+
+
+;;(defn xhr-connection
+;;  "Returns an XhrIo connection"
+;;  []
+;;  (goog.net.XhrIo.))
+
+;;(def xhr xhr-connection)
+
+;;(defn myCallback [replyValue]
+;;  ())
+  ;;... Do Something with replyValue
+  ;;... for example: (someJsonFunc (.getResponseJson (.target replyValue))))
+
+;;(defn ajax-json [url]
+;;   (.send xhr url myCallback))
+
+(comment
+
+(defn set-html! [dom content]
+  (set! (. dom -innerHTML) content))
+
+(defn set-html! [dom content]
+  (set! (. dom -innerHTML) content))
+
+(def link-stringlist (list "https://www.google.com/#q=test" "https://www.google.com/#q=test2"))
+
+(def basislink "https://www.google.com/#q=")
+
+(defn linkify [link] (str "<a href='" basislink link "' > Link </ a>"))
+
+(defn link [linklist] (clojure.string/join "<br />" linklist))
+
+(defn targets [] (let [user-linklist (value (by-id "inputfield"))]
+                   (clojure.string/split-lines user-linklist)
+                   ))
+
+(defn getvalue [] (value (by-id "inputfield")))
+
+(defn search [] (append! (by-id "linklist") (str "<br />"
+                                                 (link (map linkify (targets)) ))))
+
+(listen! (sel "#searchbutton") :click (fn [evt] 
+                                                   (search)))
+
+(set-html! (by-id "title") "Google enhanced")
+
+)
+
