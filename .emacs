@@ -210,6 +210,18 @@
 (add-to-list 'auto-mode-alist '("\\.cljx\\'" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.clj\\'" . clojure-mode))
 
+(defvar mysql-user "root")
+(defvar mysql-password "1234")
+
 
 (setq sql-user "root")
 (setq sql-password "1234")
+
+(require 'mysql)
+
+
+   (require 'sql-completion)
+   (setq sql-interactive-mode-hook
+         (lambda ()
+           (define-key sql-interactive-mode-map "\t" 'comint-dynamic-complete)
+           (sql-mysql-completion-init)))

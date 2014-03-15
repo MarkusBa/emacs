@@ -1,23 +1,26 @@
 
 ;; ----- smex-history -----
 (
+ sql-mysql-update-database
+ sql-mysql-refresh-schema
+ sql-mysql-completion-init
  sql-mode
- paredit-mode
  package-list-packages
  package-install
- ielm
- org-mode
- cd
+ paredit-mode
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 5)
+ (package-install . 7)
  (nrepl . 1)
  (org-mode . 2)
- (package-list-packages . 10)
+ (package-list-packages . 12)
  (nrepl-jack-in . 10)
  (ielm . 1)
  (paredit-mode . 7)
- (sql-mode . 1)
+ (sql-mode . 5)
+ (sql-mysql-completion-init . 2)
+ (sql-mysql-update-database . 2)
+ (sql-mysql-refresh-schema . 1)
 )

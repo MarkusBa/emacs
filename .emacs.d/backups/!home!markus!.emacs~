@@ -71,14 +71,17 @@
 
 (load-theme 'solarized-light t)
 
+;; haskell
 ;;(load "/usr/share/emacs24/site-lisp/haskell-mode/haskell-mode.elc")
 
+;; haskell
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode 
 ;;   'turn-on-haskell-indent)
 
-(add-to-list 'load-path "~/.emacs.d/elpa/evil-1.0.6")
-(require 'evil)
-(evil-mode 1)
+;; evil
+;;(add-to-list 'load-path "~/.emacs.d/elpa/evil-1.0.6")
+;;(require 'evil)
+;;(evil-mode 1)
 
 (tool-bar-mode 1)
 (menu-bar-mode 1)
@@ -107,6 +110,7 @@
 (require 'auto-complete)
 (global-auto-complete-mode)
 
+;; clojurescript
 ;;(defun cljs-repl ()
 ;;    (interactive)
 ;;    (setq inferior-lisp-program "cljs-repl")
@@ -115,12 +119,9 @@
 ;;(setq inferior-lisp-program "/home/markus/clojurescript/script/browser-repl")
 ;;(setq inferior-lisp-program "/usr/local/bin/sbcl --noinform")
 
+
+;; scheme
 ;;(set-variable (quote scheme-program-name) "gsi")
-
-
-
-
-
 
 
 (global-hl-line-mode t)
@@ -212,3 +213,5 @@
 
 (setq sql-user "root")
 (setq sql-password "1234")
+
+(require 'mysql)
