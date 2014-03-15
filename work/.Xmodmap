@@ -1,0 +1,11 @@
+!! accent circonflex page up, Tab page down
+!!keycode 49 = Prior
+!!keycode 23 = Next
+
+!!accent to End
+keycode 49 = End
+
+!! caps lock to control
+keycode 66 = Control_L
+clear Lock
+add Control = Control_L
