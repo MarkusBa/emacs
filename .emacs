@@ -210,6 +210,10 @@
 (add-to-list 'auto-mode-alist '("\\.cljx\\'" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.clj\\'" . clojure-mode))
 
+;; turn off asking for server, login etc.
+(require 'sql)
+(defalias 'sql-get-login 'ignore)
+
 (defvar mysql-user "root")
 (defvar mysql-password "1234")
 
@@ -225,3 +229,23 @@
          (lambda ()
            (define-key sql-interactive-mode-map "\t" 'comint-dynamic-complete)
            (sql-mysql-completion-init)))
+
+;; mysql history
+ (defun my-sql-save-history-hook ()
+    (let ((lval 'sql-input-ring-file-name)
+          (rval 'sql-product))
+      (if (symbol-value rval)
+          (let ((filename 
+                 (concat "~/.emacs.d/sql/"
+                         (symbol-name (symbol-value rval))
+                         "-history.sql")))
+            (set (make-local-variable lval) filename))
+        (error
+         (format "SQL history will not be saved because %s is nil"
+                 (symbol-name rval))))))
+ 
+  (add-hook 'sql-interactive-mode-hook 'my-sql-save-history-hook)
+
+;;immer my
+(sql-set-product 'mysql)
+
