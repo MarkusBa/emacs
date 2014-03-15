@@ -104,8 +104,14 @@
  "xmacroplay -d 50 :0.0 < ~/Doku/xmacro/cleanall"
   Mod4 + A
 
- "xvkbd -xsendevent -text '\[Page_Down]'"
-  Shift + Prior  
+#  "xte 'key Page_Down'"
+
+    "xvkbd -xsendevent -text '\[Page_Down]'"
+     Shift + Prior	
+
+#    m:0x1 + c:50
+#    Shift + Shift_L
+  
 
 ##################################
 # End of xbindkeys configuration #
