@@ -2,12 +2,12 @@
 ;; ----- smex-history -----
 (
  sql-mode
- sql-set-product
  make-directory
  tetris
  package-list-packages
  package-install
  paredit-mode
+ org-mode
 )
 
 ;; ----- smex-data -----

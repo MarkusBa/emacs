@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>EmacsWiki: Jdee-Eclipse-integration</title><link rel="alternate" type="application/wiki" title="Diese Seite bearbeiten" href="http://www.emacswiki.org/emacs?action=edit;id=Jdee-Eclipse-integration" />
+<link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" />
+<link type="text/css" rel="stylesheet" href="/css/bootstrap.css" />
+<meta name="robots" content="INDEX,FOLLOW" /><link rel="alternate" type="application/rss+xml" title="EmacsWiki" href="http://www.emacswiki.org/emacs?action=rss" /><link rel="alternate" type="application/rss+xml" title="EmacsWiki: Jdee-Eclipse-integration" href="http://www.emacswiki.org/emacs?action=rss;rcidonly=Jdee-Eclipse-integration" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki with page content"
+      href="http://www.emacswiki.org/emacs/full.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki with page content and diff"
+      href="http://www.emacswiki.org/emacs/full-diff.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki including minor differences"
+      href="http://www.emacswiki.org/emacs/minor-edits.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Changes for Jdee-Eclipse-integration only"
+      href="http://www.emacswiki.org/emacs?action=rss;rcidonly=Jdee-Eclipse-integration" /><meta name="viewport" content="width=device-width" />
+<script type="text/javascript" src="/outliner.0.5.0.62-toc.js"></script>
+<script type="text/javascript">
+
+  function addOnloadEvent(fnc) {
+    if ( typeof window.addEventListener != "undefined" )
+      window.addEventListener( "load", fnc, false );
+    else if ( typeof window.attachEvent != "undefined" ) {
+      window.attachEvent( "onload", fnc );
+    }
+    else {
+      if ( window.onload != null ) {
+	var oldOnload = window.onload;
+	window.onload = function ( e ) {
+	  oldOnload( e );
+	  window[fnc]();
+	};
+      }
+      else
+	window.onload = fnc;
+    }
+  }
+
+  var initToc=function() {
+
+    var outline = HTML5Outline(document.body);
+    if (outline.sections.length == 1) {
+      outline.sections = outline.sections[0].sections;
+    }
+
+    if (outline.sections.length > 1
+	|| outline.sections.length == 1
+           && outline.sections[0].sections.length > 0) {
+
+      var toc = document.getElementById('toc');
+
+      if (!toc) {
+	var divs = document.getElementsByTagName('div');
+	for (var i = 0; i < divs.length; i++) {
+	  if (divs[i].getAttribute('class') == 'toc') {
+	    toc = divs[i];
+	    break;
+	  }
+	}
+      }
+
+      if (!toc) {
+	var h2 = document.getElementsByTagName('h2')[0];
+	if (h2) {
+	  toc = document.createElement('div');
+	  toc.setAttribute('class', 'toc');
+	  h2.parentNode.insertBefore(toc, h2);
+	}
+      }
+
+      if (toc) {
+        var html = outline.asHTML(true);
+        toc.innerHTML = html;
+      }
+    }
+  }
+
+  addOnloadEvent(initToc);
+  </script>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+<script src="http://emacswiki.org/emacs/emacs-bootstrap.js"></script>
+<!--[if !(lt IE 8)]><!-->
+   <script type="text/javascript">
+     (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+   </script>
+<!--<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body class="http://www.emacswiki.org/emacs"><div class="header"><span class="gotobar bar"><a class="local" href="http://www.emacswiki.org/emacs/%c3%9cbersicht">Übersicht</a> <a class="local" href="http://www.emacswiki.org/emacs/Letzte_%c3%84nderungen">Letzte Änderungen</a> <a class="local" href="http://www.emacswiki.org/emacs/Neuigkeiten">Neuigkeiten</a> <a class="local" href="http://www.emacswiki.org/emacs/Suchen">Suchen</a> <a class="local" href="http://www.emacswiki.org/emacs/ElispSektion">ElispSektion</a> <a class="local" href="http://www.emacswiki.org/emacs/KurzAnleitung">KurzAnleitung</a> <a class="local" href="http://www.emacswiki.org/emacs/Impressum">Impressum</a> </span><h1><a title="Klicken um nach Verweisen auf diese Seite zu suchen" rel="nofollow" href="http://www.emacswiki.org/emacs?search=%22Jdee-Eclipse-integration%22">Jdee-Eclipse-integration</a></h1></div><div class="wrapper"><div class="content browse"><p>Eclipse is an Open Source IDE, popular among Java developers. This page does not compare JDEE (<a class="local" href="http://www.emacswiki.org/emacs/JavaDevelopmentEnvironment">JavaDevelopmentEnvironment</a>) and Eclipse in terms of features (see <a class="local" href="http://www.emacswiki.org/emacs/JdeeVsEclipse">JdeeVsEclipse</a> for that) but holds information about how to combine both editors and share information between them.</p><h2>Some assorted tools</h2><h3>RemoteEclipse (outdated; unaccessible as of October 2008)</h3><p>For those who cannot do without the one editor:</p><p><em>RemoteEclipse<a class="edit" title="Hier klicken um die Seite zu bearbeiten" rel="nofollow" href="http://www.emacswiki.org/emacs?action=edit;id=RemoteEclipse">?</a> in combination with jde-eclipse.el is the beginning of a wonderful relationship between JDEE and Eclipse.</em></p><ul><li><a class="url ftp" href="ftp://ftp.raffael.ch/software/RemoteEclipse/">ftp://ftp.raffael.ch/software/RemoteEclipse/</a></li></ul><p>I&#x2019;m using JDEE with XEmacs to successfully compile my Ant based java projects. However if there is a error in the source resulting in compilation errors, XEmacs displays a new buffer saying: &#x201c;( 18 ) (error/warning) Error in process sentinel: (error Stack overflow in regexp matcher)&#x201d;.</p><p>If I kill this buffer and view the compilations buffer the errors are all display perfectly. When I click on an error instead of being jumped to the correct line in the source code (where the error occurs) XEmacs beeps and &#x201c;Stack overflow in regexp matcher&#x201d; is displayed in the minibuffer. This doesn&#x2019;t happen in all of my Ant based projects, just some, and I don&#x2019;t know why. Has anybody else solved this error? I&#x2019;m running XEmacs on Redhat Linux 9.</p><dl class="quote"><dl class="quote"><dt /><dd>I&#x2019;m running XEmacs on RH 9, too and have no problems. Maybe you could do a M-x toggle-debug-on-error and then provoke the error again. There should be a backtrace buffer showing then that might help you locate the problem. &#x2013; <a class="local" href="http://www.emacswiki.org/emacs/StefanKamphausen">StefanKamphausen</a></dd></dl></dl><p>Hmmm the debug output doesnt really mean much to me. I should probably also mention its XEmacs 21.4.15. I&#x2019;ve pasted some of the debug output below, with some of the guff removed:</p><p>Signaling: (error &#x201c;Stack overflow in regexp matcher&#x201d;) looking-at(&#x201d;\\([^\n]*: Entering directory </p><p>&#x2026;&#x2026; loads of stuff here&#x2026;. then&#x2026;</p><pre>  compilation-parse-errors(nil 0)
+  byte-code(<span class="string">"..."</span> [compilation-parsing-end error-list-pos limit-search compilation-last-buffer find-at-least compilation-error-list t compilation-forget-errors get-buffer-window select-window switch-to-buffer set-buffer-modified-p nil w compilation-old-error-list reparse compilation-parse-errors-function] 5)
+  compile-reinitialize-errors(nil nil 0)
+  compilation-next-error-locus(1 nil)
+  next-error()
+  jde-compile-finish-kill-buffer(#&lt;buffer <span class="string">"*compilation*"</span>&gt; <span class="string">"exited abnormally with code 1\n"</span>)
+  run-hook-with-args(jde-compile-finish-kill-buffer #&lt;buffer <span class="string">"*compilation*"</span>&gt; <span class="string">"exited abnormally with code 1\n"</span>)
+  #&lt;compiled-function (buf msg) <span class="string">"...(10)"</span> [compilation-finish-function msg buf run-hook-with-args jde-ant-build-hook nil] 4&gt;(#&lt;buffer <span class="string">"*compilation*"</span>&gt; <span class="string">"exited abnormally with code 1\n"</span>)
+  compilation-sentinel(#&lt;process <span class="string">"compilation"</span> pid 31934 state<span class="builtin">:exit</span>&gt; <span class="string">"exited abnormally with code 1\n"</span>)</pre><h3>Emacs plug-in for Eclipse (outdated as of October 2008: doesn't work with Eclipse 3.0)</h3><p>There is also an Emacs Plug-in for Eclipse at <a class="url http" href="http://pag.csail.mit.edu/~adonovan/hacks/eclipse-emacs.html">http://pag.csail.mit.edu/~adonovan/hacks/eclipse-emacs.html</a> (Still have to experiment with it) &#x2013; WolfWolfswinkel<a class="edit" title="Hier klicken um die Seite zu bearbeiten" rel="nofollow" href="http://www.emacswiki.org/emacs?action=edit;id=WolfWolfswinkel">?</a></p><h2>Share configuration</h2><h3>Emacs keybindings in Eclipse</h3><p>TODO</p><p><a class="anchor" name="ProjectFiles"></a> </p><h3>Import Eclipse projects into JDEE</h3><p><a class="url http outside" href="http://github.com/phua/jde-int/blob/master/jde-int.el">jde-int</a> is a basic Emacs Lisp script that imports Eclipse projects to JDEE. It generates prj.el files with the jde-sourcepath and jde-global-classpath for every Eclipse project under your workspace, overwriting existing prj.el files.</p><p>Run (jde-int-find-and-import-projects &#x201c;/path/to/workspace&#x201d;). &#x2013; <a class="local" href="http://www.emacswiki.org/emacs/PeterHua">PeterHua</a></p><h2>Possible ways to full integration</h2><h3>Create an eclim interface for emacs</h3><ul><li>See <a class="url http" href="http://eclim.sourceforge.net/">http://eclim.sourceforge.net/</a></li></ul><p><em>The primary goal of eclim is to bring Eclipse functionality to the Vim editor. The initial goal was to provide Eclipse’s java functionality in vim, but support for various other languages (php, python, css, html, xml, etc.) have been added and several more are planned.</em></p><p>They&#x2019;ve built some server that runs a headless eclipse instance and communicates with vim via the command line. It should be doable to create a frontend for emacs, so that all features of eclipse (superior completion, refactoring, etc.) can be used from inside emacs.</p><div class="color one level0"><p> A front-end project has been started at <a class="url http" href="http://repo.or.cz/w/eclim-emacs.git">http://repo.or.cz/w/eclim-emacs.git</a> and <a class="local" href="http://www.emacswiki.org/emacs/CompanyMode">CompanyMode</a> already brings eclim completion to Emacs. --<a class="local" href="http://www.emacswiki.org/emacs/nschum">nschum</a></p></div><h4>emacs-eclim</h4><p>The <a class="local" href="http://www.emacswiki.org/emacs/EmacsEclim">EmacsEclim</a> project is targeting complete eclipse integration into emacs. The project is now living on github at: <a class="url http" href="http://github.com/senny/emacs-eclim">http://github.com/senny/emacs-eclim</a>. If you are interested in contributing, feel free to fork the project and send me a pull request. --<a class="local" href="http://www.emacswiki.org/emacs/senny">senny</a></p><hr /><p><a class="local" href="http://www.emacswiki.org/emacs/JavaDevelopmentEnvironment">JavaDevelopmentEnvironment</a></p></div><div class="wrapper close"></div></div><div class="footer"><hr /><span class="gotobar bar"><a class="local" href="http://www.emacswiki.org/emacs/%c3%9cbersicht">Übersicht</a> <a class="local" href="http://www.emacswiki.org/emacs/Letzte_%c3%84nderungen">Letzte Änderungen</a> <a class="local" href="http://www.emacswiki.org/emacs/Neuigkeiten">Neuigkeiten</a> <a class="local" href="http://www.emacswiki.org/emacs/Suchen">Suchen</a> <a class="local" href="http://www.emacswiki.org/emacs/ElispSektion">ElispSektion</a> <a class="local" href="http://www.emacswiki.org/emacs/KurzAnleitung">KurzAnleitung</a> <a class="local" href="http://www.emacswiki.org/emacs/Impressum">Impressum</a> </span><span class="translation bar"><br />  <a class="translation new" rel="nofollow" href="http://www.emacswiki.org/emacs?action=translate;id=Jdee-Eclipse-integration;missing=de_es_fr_it_ja_ko_pt_ru_se_zh">Übersetzung hinzufügen</a></span><span class="edit bar"><br /> <a class="comment local edit" accesskey="c" href="http://www.emacswiki.org/emacs/Comments_on_Jdee-Eclipse-integration">Diskussion</a> <a class="edit" accesskey="b" title="Hier klicken um die Seite zu bearbeiten" rel="nofollow" href="http://www.emacswiki.org/emacs?action=edit;id=Jdee-Eclipse-integration">Diese Seite bearbeiten</a> <a class="history" rel="nofollow" href="http://www.emacswiki.org/emacs?action=history;id=Jdee-Eclipse-integration">Andere Versionen dieser Seite</a> <a class="admin" rel="nofollow" href="http://www.emacswiki.org/emacs?action=admin;id=Jdee-Eclipse-integration">Administration</a></span><span class="time"><br /> Zuletzt geändert 2013-08-24 11:59 UTC von <a class="author" title="178-83-163-103.dynamic.hispeed.ch" href="http://www.emacswiki.org/emacs/AlexSchroeder">AlexSchroeder</a> <a class="diff" rel="nofollow" href="http://www.emacswiki.org/emacs?action=browse;diff=2;id=Jdee-Eclipse-integration">(Unterschiede)</a></span><form method="get" action="http://www.emacswiki.org/cgi-bin/emacs" enctype="multipart/form-data" accept-charset="utf-8" class="search">
+<p><label for="search">Suchen:</label> <input type="text" name="search"  size="20" accesskey="f" id="search" /> <label for="searchlang">Sprache:</label> <input type="text" name="lang"  size="10" id="searchlang" /> <input type="submit" name="dosearch" value="Los!" /></p></form><div style="float:right; margin-left:1ex;">
+<!-- Creative Commons License -->
+<a class="licence" href="http://creativecommons.org/licenses/GPL/2.0/"><img alt="CC-GNU GPL" style="border:none" src="/pics/cc-GPL-a.png" /></a>
+<!-- /Creative Commons License -->
+</div>
+
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <license rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+  <dc:type rdf:resource="http://purl.org/dc/dcmitype/Software" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/GPL/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+   <requires rdf:resource="http://web.resource.org/cc/SourceCode" />
+</License>
+</rdf:RDF>
+-->
+
+<p class="legal">
+This work is licensed to you under version 2 of the
+<a href="http://www.gnu.org/">GNU</a> <a href="/GPL">General Public License</a>.
+Alternatively, you may choose to receive this work under any other
+license that grants the right to use, copy, modify, and/or distribute
+the work, as long as that license imposes the restriction that
+derivative works have to grant the same rights and impose the same
+restriction. For example, you may choose to receive this work under
+the
+<a href="http://www.gnu.org/">GNU</a>
+<a href="/FDL">Free Documentation License</a>, the
+<a href="http://creativecommons.org/">CreativeCommons</a>
+<a href="http://creativecommons.org/licenses/sa/1.0/">ShareAlike</a>
+License, the XEmacs manual license, or
+<a href="/OLD">similar licenses</a>.
+</p>
+</div>
+</body>
+</html>
