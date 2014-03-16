@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ dired
  package-install
  eval-buffer
  sql-mode
  make-directory
  tetris
  package-list-packages
- paredit-mode
 )
 
 ;; ----- smex-data -----
@@ -29,4 +29,5 @@
  (jde-mode . 4)
  (eval-buffer . 1)
  (jde-int-find-and-import-projects . 1)
+ (dired . 1)
 )

@@ -262,4 +262,5 @@
  (global-set-key "\C-cj" 'jde-mode)
  (global-set-key "\C-cv" 'evil-mode)
  (global-set-key "\C-cp" 'paredit-mode)
+ (global-set-key "\C-cd" 'dired)
 
