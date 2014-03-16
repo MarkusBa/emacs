@@ -258,3 +258,4 @@
 
 
  (global-set-key "\C-cs" 'shell)
+ (global-set-key "\C-cq" 'sql-mode)
