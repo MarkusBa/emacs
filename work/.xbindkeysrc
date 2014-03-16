@@ -106,8 +106,8 @@
 
 #  "xte 'key Page_Down'"
 
-    "xvkbd -xsendevent -text '\[Page_Down]'"
-     Shift + Prior	
+    "xvkbd -xsendevent -text '\[Page_Up]'"
+     Shift + Next	
 
 #    m:0x1 + c:50
 #    Shift + Shift_L

@@ -9,7 +9,7 @@
 !!keycode 49 = End
 
 !!accent to Prior, shift accent to Next
-keycode 49 = Prior
+keycode 49 = Next
 !! via xbindkeys Shift plus it doesn next
 
 !! caps lock to control
