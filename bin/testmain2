@@ -1,0 +1,6 @@
+#!/bin/bash
+cd ~/git/jobcenter/target
+java -cp jobcenter-1.0.0.1.jar de.chamaeleon.jobcenter.test.Main2 -i << END_TEXT
+connect rlp 
+list
+END_TEXT

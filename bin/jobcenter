@@ -1,0 +1,2 @@
+#!/bin/bash
+java -cp ~/git/jobcenter/target/jobcenter-1.0.0.1.jar de.chamaeleon.jobcenter.main.ClientMain "$@"
