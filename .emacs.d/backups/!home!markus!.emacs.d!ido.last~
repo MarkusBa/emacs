@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/markus/workspace/" . "crudbook/")
+ ("/home/markus/.emacs.d/" . "scripts/")
  ("/home/markus/Clojure/hw/app/src/" . "hw/")
  ("/home/markus/Clojure/hw/app/" . "templates/")
  ("/home/markus/Clojure/hw/" . "app/")
@@ -9,7 +11,7 @@
  ("/home/markus/workspace/seminarverwaltung/" . "src/")
  ("/home/markus/Clojure/guestbook/src/" . "guestbook/")
  ("/home/markus/Clojure/guestbook/" . "src/")
- ("/home/markus/" . ".emacs.d/")
+ ("/home/markus/" . "workspace/")
 )
 
 ;; ----- ido-work-directory-list -----
@@ -37,9 +39,15 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/markus/.emacs.d/" (21284 38084 434156 937000) "ac-comphist.dat" "places" "../" "ido.last" "session.205f64992-9cff-4e1a-b89e-f17c308183d1" "games/" "auto-save-list/" "./" "backups/" ".smex-items" "elpa/")
+ ("/home/markus/workspace/crudbook/" (21284 61353 460470 24000) "src/" "../" "target/" ".settings/" ".project" ".classpath" "bin/" "./" "prj.el" "pom.xml" "sql/")
 
- ("/home/markus/" (21284 58579 461634 673000) "snippet" ".ICEauthority" ".cpan/" "git/" ".filezilla/" ".gconf/" "dwhelper/" ".gstreamer-0.10/" ".m2/" "Downloads/" "svn/" ".i3/" ".mysql_history" ".dmrc" "../" ".Xdefaults" ".viminfo" ".ivy2/" ".ghc/" "workspace/" "shared/" ".gnome2_private/" "Musik/" ".emacs" ".Xauthority" ".dbus/" ".zshrc.local.save" "Öffentlich/" ".xchat2/" "Scala/" ".mysql/" ".config/" ".zshrc.local" ".RapidSVN" "Dokumente/" ".vim/" ".XmodmapDe" ".zcompdump" ".ssh/" ".java/" ".vimperator/" ".emacs.d/" "Vorlagen/" "sketchbook/" ".cabal/" ".IdeaIC13/" "dbext_sql_history.txt" ".mozilla/" ".local/" ".thumbnails/" "local/" ".cache/" ".vimrc" " " ".bash_logout" "xfcescript" ".XmodmapXfce" ".zshrc.local.save.2" "bin/" "crap" ".zshrc.local.save.1" ".xsession-errors" ".Xmodmap" "./" ".pki/" ".xinitrc.bak" ".gitconfig" "Kopie von .emacs" ".zsh_history" ".zshrc" "Kindle/" "Arbeitsfläche/" "haskell/" ".purple/" ".bash_history" ".sbt/" ".lein/" ".bashrc" "Clojure/" ".scala_history" "telefonliste/" "Java/" ".VirtualBox/" "macro/" ".adobe/" "Bilder/" "space.sh" ".macromedia/" "Videos/" ".eclipse/" ".subversion/" ".Xmodmap.Neoangepasst" ".zdirs" "VirtualBox VMs/" ".w3m/" ".profile" ".xsession-errors.old" ".arduino/" "Kopie von .bashrc" ".xscreensaver" ".gnome2/" ".xbindkeysrc")
+ ("/home/markus/" (21285 945 514038 898000) "snippet" ".ICEauthority" ".cpan/" "git/" ".filezilla/" ".gconf/" "dwhelper/" ".gstreamer-0.10/" ".m2/" "Downloads/" "svn/" ".i3/" ".mysql_history" ".dmrc" "../" ".Xdefaults" ".viminfo" ".ivy2/" ".ghc/" "workspace/" ".gtk-bookmarks" "shared/" ".gnome2_private/" "Musik/" ".emacs" ".Xauthority" ".dbus/" ".zshrc.local.save" "Öffentlich/" ".xchat2/" "Scala/" ".mysql/" ".config/" ".zshrc.local" ".RapidSVN" "Dokumente/" ".vim/" ".XmodmapDe" ".zcompdump" ".ssh/" ".java/" ".vimperator/" ".emacs.d/" "Vorlagen/" "sketchbook/" ".cabal/" ".IdeaIC13/" "dbext_sql_history.txt" ".mozilla/" ".local/" ".thumbnails/" "local/" ".cache/" ".vimrc" " " ".bash_logout" "xfcescript" ".XmodmapXfce" ".zshrc.local.save.2" "bin/" "crap" ".zshrc.local.save.1" ".xsession-errors" ".Xmodmap" "./" ".pki/" ".xinitrc.bak" ".gitconfig" "Kopie von .emacs" ".zsh_history" ".zshrc" "Kindle/" "Arbeitsfläche/" "haskell/" ".purple/" ".bash_history" ".sbt/" ".lein/" ".bashrc" "Clojure/" ".scala_history" "telefonliste/" "Java/" ".VirtualBox/" "macro/" ".adobe/" "Bilder/" "space.sh" ".macromedia/" "Videos/" ".eclipse/" ".subversion/" ".Xmodmap.Neoangepasst" ".zdirs" "VirtualBox VMs/" ".w3m/" ".profile" ".xsession-errors.old" ".arduino/" "Kopie von .bashrc" ".xscreensaver" ".gnome2/" ".xbindkeysrc")
+
+ ("/home/markus/.emacs.d/scripts/" (21284 61370 996469 281000) "converteclipsepr" "../" "converteclipsepr~" "./" "EmacsWiki: Jdee-Eclipse-integration.html")
+
+ ("/home/markus/workspace/" (21258 8690 383731 972000) "../" "inttest/" "guestbook/" "seminarverwaltung/" "VersionPlusPlus/" "rdf/" "helloworld/" "crudbook/" "crudbook.tar.gz" "test/" "./" "versionplus/" "RemoteSystemsTempFiles/" "ws/" "Servers/" ".metadata/")
+
+ ("/home/markus/.emacs.d/" (21284 61287 780472 807000) "ac-comphist.dat" "places" "../" "ido.last" "session.205f64992-9cff-4e1a-b89e-f17c308183d1" "games/" "auto-save-list/" "jdee-2.4.1/" "scripts/" "./" "backups/" ".smex-items" "elpa/" "jdee/" "sql/")
 
  ("/home/markus/Downloads/Buch/" (21258 13302 940356 64000) "buch" "../" "./")
 

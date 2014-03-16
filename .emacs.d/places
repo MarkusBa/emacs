@@ -1,5 +1,9 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/markus/Downloads/test.sql" . 28)
+(("/home/markus/workspace/crudbook/prj.el" . 219)
+ ("/home/markus/.emacs.d/elpa/malabar-mode-20140307.1420/malabar-mode-autoloads.el" . 662)
+ ("/home/markus/.emacs.d/elpa/fringe-helper-20130519.741/fringe-helper-autoloads.el" . 248)
+ ("/home/markus/.emacs.d/scripts/converteclipsepr" . 1034)
+ ("/home/markus/Downloads/test.sql" . 28)
  ("/home/markus/.emacs" . 6673)
  ("/home/markus/Clojure/hw/app/src/hw/behavior.clj" . 494)
  ("/home/markus/Clojure/hw/app/src/hw/rendering.cljs" . 778)

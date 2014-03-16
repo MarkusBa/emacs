@@ -249,3 +249,14 @@
 ;;immer my
 (sql-set-product 'mysql)
 
+;;java
+;(add-to-list 'load-path "~/.emacs.d/lisp/")
+  (add-to-list 'load-path "~/.emacs.d/jdee/lisp" )
+  (autoload 'jde-mode "jde" "JDE mode" t)
+  (setq auto-mode-alist
+        (append '(("\\.java\\'" . jde-mode)) auto-mode-alist))
+
+ (require 'jde-findbugs)
+
+
+ (global-set-key "\C-cs" 'shell)

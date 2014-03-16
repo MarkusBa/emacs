@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
+ package-install
+ eval-buffer
  sql-mode
  make-directory
  tetris
  package-list-packages
- package-install
  paredit-mode
- org-mode
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 7)
+ (package-install . 8)
  (nrepl . 1)
  (org-mode . 2)
  (package-list-packages . 12)
@@ -26,4 +26,7 @@
  (tetris . 1)
  (make-directory . 1)
  (sql-set-product . 1)
+ (jde-mode . 4)
+ (eval-buffer . 1)
+ (jde-int-find-and-import-projects . 1)
 )
