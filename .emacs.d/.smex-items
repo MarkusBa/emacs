@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
+ org-mode
  dired
  package-install
  eval-buffer
  sql-mode
  make-directory
  tetris
- package-list-packages
 )
 
 ;; ----- smex-data -----
 (
  (package-install . 8)
  (nrepl . 1)
- (org-mode . 2)
+ (org-mode . 4)
  (package-list-packages . 12)
  (nrepl-jack-in . 10)
  (ielm . 1)
