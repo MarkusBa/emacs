@@ -1,21 +1,21 @@
 
 ;; ----- smex-history -----
 (
- org-mode
- dired
+ fullscreen
+ god-mode
+ package-list-packages
  package-install
- eval-buffer
- sql-mode
- make-directory
- tetris
+ eval-region
+ w3m
+ global-font-lock-mode
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 8)
+ (package-install . 9)
  (nrepl . 1)
  (org-mode . 4)
- (package-list-packages . 12)
+ (package-list-packages . 13)
  (nrepl-jack-in . 10)
  (ielm . 1)
  (paredit-mode . 7)
@@ -30,4 +30,12 @@
  (eval-buffer . 1)
  (jde-int-find-and-import-projects . 1)
  (dired . 1)
+ (ido-mode . 2)
+ (global-font-lock-mode . 1)
+ (w3m . 2)
+ (eval-region . 5)
+ (insert-p-tag . 1)
+ (next-user-buffer . 1)
+ (god-mode . 2)
+ (fullscreen . 1)
 )

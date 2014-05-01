@@ -1,0 +1,49 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables
+  (list
+    (semanticdb-table "Main.java"
+      :major-mode 'jde-mode
+      :tags 
+        '( ("de.bort.util" package nil nil [1 22])
+            ("java.math.BigInteger" include nil nil [24 52])
+            ("java.sql.Connection" include nil nil [53 80])
+            ("java.sql.DriverManager" include nil nil [81 111])
+            ("java.sql.ResultSet" include nil nil [112 138])
+            ("java.sql.SQLException" include nil nil [139 168])
+            ("java.sql.Statement" include nil nil [169 195])
+            ("de.bort.entities.Nodes" include nil nil [197 227])
+            ("de.bort.entities.Prefixes" include nil nil [228 261])
+            ("de.bort.entities.Quads" include nil nil [262 292])
+            ("org.hibernate.Session" include nil nil [294 323])
+            ("org.hibernate.SessionFactory" include nil nil [324 360])
+            ("java.util.ArrayList" include nil nil [362 389])
+            ("java.util.List" include nil nil [390 412])
+            ("Main" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("deleteThese" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("session" variable (:type "Session") (reparse-symbol formal_parameters) [469 484])
+                            ("entity" variable (:type "String") (reparse-symbol formal_parameters) [486 499])
+                            ("" variable (:type "ids") (reparse-symbol formal_parameters) [515 518]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [438 821])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "strings") (reparse-symbol formal_parameters) [860 867]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [827 2418]))                  
+                :type "class")
+                nil [414 2420]))          
+      :file "Main.java"
+      :pointmax 2421
+      :fsize 2420
+      :lastmodtime '(21303 7747 2203 545000)
+      :unmatched-syntax '((DOT 859 . 860) (IDENTIFIER 851 . 857) (DOT 858 . 859) (GT 513 . 514) (IDENTIFIER 501 . 505) (LT 505 . 506))))
+  :file "!home!markus!Clojure!clojurebook!java!de!bort!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

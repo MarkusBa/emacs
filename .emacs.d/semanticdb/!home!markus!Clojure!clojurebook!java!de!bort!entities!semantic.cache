@@ -1,0 +1,106 @@
+;; Object entities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "entities/"
+  :tables
+  (list
+    (semanticdb-table "Prefixes.java"
+      :major-mode 'jde-mode
+      :tags 
+        '( ("de.bort.entities" package nil nil [1 26])
+            ("java.math.BigInteger" include nil nil [29 57])
+            ("java.util.Date" include nil nil [58 80])
+            ("javax.persistence.Column" include nil nil [82 114])
+            ("javax.persistence.Entity" include nil nil [115 147])
+            ("javax.persistence.GeneratedValue" include nil nil [150 190])
+            ("javax.persistence.Id" include nil nil [193 221])
+            ("javax.persistence.Table" include nil nil [224 255])
+            ("javax.persistence.Temporal" include nil nil [258 292])
+            ("javax.persistence.TemporalType" include nil nil [293 331])
+            ("Prefixes" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("private")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [425 444])
+                    ("prefix" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [447 469])
+                    ("uri" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [471 490])
+                    ("ts" variable
+                       (:typemodifiers ("private")
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [492 508])
+                    ("deleted" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [517 541])
+                    ("Prefixes" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [547 569])
+                    ("Prefixes" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("uri" variable (:type "String") (reparse-symbol formal_parameters) [588 598])
+                            ("prefix" variable (:type "String") (reparse-symbol formal_parameters) [600 613]))                          )
+                        (reparse-symbol class_member_declaration) [572 678])
+                    ("getDeleted" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [714 772])
+                    ("setDeleted" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("deleted1" variable (:type "boolean") (reparse-symbol formal_parameters) [801 817]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [778 853])
+                    ("getTs" function
+                       (:typemodifiers ("public")
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [916 953])
+                    ("setTs" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ts" variable (:type "Date") (reparse-symbol formal_parameters) [974 981]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [956 1003])
+                    ("getPrefix" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1032 1079])
+                    ("setPrefix" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("prefix" variable (:type "String") (reparse-symbol formal_parameters) [1104 1117]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1082 1147])
+                    ("getUri" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1173 1214])
+                    ("setUri" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("uri" variable (:type "String") (reparse-symbol formal_parameters) [1236 1246]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1217 1270])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1295 1360]))                  
+                :type "class")
+                nil [369 1431]))          
+      :file "Prefixes.java"
+      :pointmax 1950
+      :fsize 1971
+      :lastmodtime '(21302 57098 953617 380000)
+      :unmatched-syntax nil))
+  :file "!home!markus!Clojure!clojurebook!java!de!bort!entities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

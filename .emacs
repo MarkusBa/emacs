@@ -260,7 +260,53 @@
  (global-set-key "\C-cs" 'shell)
  (global-set-key "\C-cq" 'sql-mode)
  (global-set-key "\C-cj" 'jde-mode)
- (global-set-key "\C-cv" 'evil-mode)
+ (global-set-key "\C-cl" 'evil-mode)
  (global-set-key "\C-cp" 'paredit-mode)
  (global-set-key "\C-cd" 'dired)
+ (global-set-key "\C-cc" 'global-font-lock-mode)
 
+;; disable color crap
+(global-font-lock-mode nil)
+
+(defun insert-p-tag ()
+  "Insert <p></p> at cursor point."
+  (interactive)
+  (insert "<p></p>")
+  (backward-char 4))
+
+(defun next-user-buffer ()
+  "Switch to the next user buffer.
+User buffers are those whose name does not start with *."
+  (interactive)
+  (next-buffer)
+  (let ((i 0))
+    (while (and (string-equal "*" (substring (buffer-name) 0 1)) (< i 20))
+      (setq i (1+ i)) (next-buffer))))
+
+(defun previous-user-buffer ()
+  "Switch to the previous user buffer.
+User buffers are those whose name does not start with *."
+  (interactive)
+  (previous-buffer)
+  (let ((i 0))
+    (while (and (string-equal "*" (substring (buffer-name) 0 1)) (< i 20))
+      (setq i (1+ i)) (previous-buffer) )))
+
+(require 'god-mode)
+(global-set-key (kbd "<escape>") 'god-mode-all)
+(defun my-update-cursor ()
+  (setq cursor-type (if (or god-local-mode buffer-read-only)
+                        'box
+                      'bar)))
+
+(add-hook 'god-mode-enabled-hook 'my-update-cursor)
+(add-hook 'god-mode-disabled-hook 'my-update-cursor)
+
+(defun fullscreen (&optional f)
+       (interactive)
+       (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
+               '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
+       (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
+               '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
+
+(fullscreen)

@@ -60,21 +60,16 @@
    Idee: Navi fuer den Browser, den Computer, das Leben
 ** hardware entwickeln - c . sonst nur spiele, kostenloskultur, medizin, steuern, anwaltssoftware
 ** Fazit:
+   Automatische Xmodmapconfig
    Sim City
    Suchmaschine, vllt. als extension
-   Man braucht irgendwie content
    Frage und eigene Antwort - webseite: das half mir
    Eclipse verbessern
    Core logic. Logik nicht in den Kontrollfluss
    ide in javascript
    Clojure bis
-   Eclipse Shortcuts
-   final aehnliches keyword java
    Suchmaschine, in welchen clubs passende frauen..., freunde,
    gruppen, vereine
-   java macros
-   eigener validator für java - eigener codestil wird eingehalten, bspw.
-   immutable datastructures
 
 * Nichtcomputer-Geschäftsideen
 Altersheimautomatisierung, in Altersheime investieren / Altersheim gründen
@@ -115,6 +110,7 @@ inic artist Dillon Francis web store had a $1,000,000 fee for him to enlist in t
   
 
 * Hobbyideen
+Buch Schreiben
 wiki für vorlesungen
 Buch über australischen talmud mord
 magic cube drafts offziell, turniere nur mit preconstructed (silver)decks
@@ -154,39 +150,17 @@ geld = vergangenheit
 Investitionen unabhaengig von Hedge Fonds
 berufsunf. versicherung
 ein umsturz ist unsere pflicht
-etwas neues kreieren
 heimarbeit
 warren buffet fonds investieren bzw. etfs
-sei kreativ
-geld ersatz - arbeit
-meine ansprüche senken, relaxter werden
-feststellung, ich weiß immernoch nicht was ich will
-mehr reden auf arbeit
-sps lernen
 ccc videos
-überlegen, was du willst
-Pausen sind zum Lernen unheimlich wichtig
-Wichtig für Geschäftsideen: problem, das man selbst hat
 tanten einsam das kann mir auch blühen
-Warum ruft mich eigentlich niemand an?
-Warum sagen Ärzte eigentlich nie, dass sie das erst recherchieren müssen?
-Wie funktioniert Clojure? 
 Programmer Competency Matrix
-Ausgehen > Spieleabend
 Poker: Wohin geht der Blick?
-Lange im Bett <> erholt
-Nicht zuviel am WE machen, erholt sein ist geil
 50.000 versus 300.000 grundstückspreise dorf koblenz
-kopf, nicht finger entspannen
-Was hält Paare zusammen? Interesse aneinander
 Keylogger js
-vim buch
-bot schreiben a la google
 auf der arbeit besser essen
-Monads : zucker um functions zu chainen
 Schnellen, leisen rechner kaufen
 Einkaufswagen u auto nutzen
-geld mit webseite verdienen
 Monitor kaufen
 Das Leben ist Vergänglich
 I run Omegle.com. I make six figures monthly from AdSense, which is
@@ -194,73 +168,203 @@ pretty sweet. The biggest change I made which increased ad revenue was
 the addition of video chat mode. It increased traffic very
 significantly, as well as increasing the revenue per user.
 ~$1000/month for bandwidth and hosting. Linode.
-Xml sollte key values haben
 webspace zulegen
-was will ich erreichen im leben?
 Geld, gute Ideen, Freunde. Wahrscheinlich liebe ich programmieren zu
 sehr
-Andere hacker suchen.
-Python user group vllt oder .net?
-Welche softwareenwicklung außer web magst du?
-Lippen zusammenpressen, lippen lecken und trockenheit -> verschleiss
-Rechts weniger muskeln finger
-sass
-sport
 tiny os
 hackin9
-desktop kaufen
-aspectj
-seite wie mkyong
 Firefox extension google suche
-Gut in den Dingen sein, die andere nicht interessieren
-Bessere user interfaces
 design for change
 landwirt ist unbeliebt, müll, metzger, statiker
 irgendeine lernkurve haben, damit ich mich weiterentwickele
 Depressionswebseite entwerfen
-Spezialisierung ist wichtig
 Life hacking - wie kann man zeit sparen, das buch
 Macros für websurfen
 Nimm dir ein Beispiel an Vogella, oder dem org mode autor - bücher,
 blog, kurse
-Irgendeine Physiksache wie Mosfets. Vielleicht verkäuft sich das
-später besser...
-Oder eine Krankheit da sind Betroffene aber wohl besser informiert,
 ein Autoteil, IT Sicherheit, Waffen, Assembler, Rhetorik,
 Lerntheorie, Wifi, https, Sensoren, Gebäudeautomatis.
 Wifi, Akustik/Ohrenschutz, Motoren, https, Sensoren, Gebäudeautomatis.
 Gut wäre etwas, das sich später fürs Beamtentum anbietet, vielleicht
 ein Gesetz, SAP, Statistik, ... Oder zumindest etwas mit behördlicher 
 Nachfrage
-Am besten die Behörden/hoheitlichen Aufgaben mal durchgehen...
 Eclipse shortcuts lernen
-Dingfabrik köln zum basteln
-Eclipse validation off
-typed racket
 lippen lecken abgewöhnen
-vielleicht bin ich nicht der schnellste, aber ich finde mich nicht
-mit problemen ab
 Macros für sql skripte
-clojure atoms in java
-Inflationswarenkorb - wofür besteht ein markt
 Suchmaschine, in welchen clubs passende frauen...
 Öl, anna andrea frank, parkgenehm., rücken, pentabyte, visualvm,
-barbara buch, felix, 
-manchmal muss sinnloses zuballern sein ?
 elektrische rückkopplung passiert bei überreizung
-8 stunden zu anstrengend
 hd, ram, fscheck
-besser durchsuchbare git history
-java macro
-fenster öffnen arduino
-laptop selber baun
+testtes
 firmenlauf welche gibt es
 generic crud triplestore, entity edit
 jobs dumb, teilzeit, beamte
 eigener validator für java - eigener codestil wird eingehalten, bspw.
 immutable datastructures
+quadstore java suchen
+paypal überweisen, paket
+dry code suchen
+jahresbescheinigung steuer, matratze, maria
+emacs keyboard
+stehen arbeiten
+merge finder direkt
+video oel nachfüllen
+verwaltung lernen
+barber
+schwarz weiß colorscheme
+august papa
+deskopnutzung analyse - makros, color scheme, plugins etc.
+ai desktop
+fuer ubuntu, redhat, suse, freebsd etc arbeiten
+ide die tastenkürzel, klicksequenzen merkt und makros anbietet.
+gleiches für colors, plugins
 
+newsletter abbestellen
+frank
+logik oder systemnah oder lisp
+finger
+javascript scopes
 
+konfig loesung mit dsl
+recht logik system
+java template
+dbmakroapp
+keyboardbau
+ionas klon firebug
+datomic klon
+html als s expression fur ionas
+
+emacs zuviel zeug
+java c2
+vim/perl
+versionplus
+sport
+test cases
+how floss
+hautarzt 16 05 10h 
+java parse
+versios plus
+sql skript
+langsam und schrittweise vorgehen
+friseur
+backup shell history 
+zahnschutz knirschen, 30 min warten putzen, täglich sanft flossen
+backup mail
+try out our products more
+ffi 
+additional modifier quertz
+eclipse faster
+emacs search project
+web developer toolbar zum schneller arbeiten bzw. ausblenden von zeug
+selbsttestende software, alle cases
+yahoo oder duckduckgo
+datalog mysql
+http://ergoemacs.org/emacs/elisp.html
+http://www.drgarbage.com/sourcecode-visualizer.html
+
+sport
+macro emacslisp
+stefan
+aldi 
+friseur
+jürgen
+
+* Sprachen
+
+  perl ist es nicht wert
+  Lisp hat zuwenig bibs, webserver sind zu wenig getestet 
+    Many developers think Java is lame and strive for an elegant language with beautiful syntax, but sorry guys - Resin Java2EE Applications Server has rapid response to AJAX connections, popular Java SMTP libraries are capable of handling real-world messages, there is Lucene for full-text search, there is joda-time (with extensions) for date-time handling and so on and so on. With Python it's the same - a lot of proven real world libraries. 
+  Es gibt wohl kein static typing auf der jvm außer scala
+  und die typ signaturen sind vielleicht nicht so schlimm
+  clojure dry
+   Lisp is Not an Acceptable Lisp 
+  Static Typing's Paper Tigers
+
+And then we've got Scala. I've gotta mention Scala. Who here knows... you've heard of Scala? Yeah? (a few hands go up) Mmmmm, yeah, getting there... looks like some people, OK.
+
+Scala is a very strongly typed language for the JVM. It's from researchers in Switzerland; they're professors. It's from sort of the same school of thought that static typing has evolved with over the last fifteen years in academia: Haskell, SML, Caml, these sorts of H-M functional languages.
+
+And Scala's interesting because it actually takes a functional static type system and it layers... it merges it with Java's object-oriented type system, to produce.... Frankenstein's Monster.
+
+I've got the language spec here in my backpack. Oh, my god... I mean, like, because it's getting a little bit of momentum, right? So I figure I've got to speak from a position of sort of knowledge, not ignorance, when I'm dissing it. (Heh heh.)
+
+And so before, I was like: "Oh yeah, Scala! Strongly typed. Could be very cool, very expressive!"
+
+The... the the the... the language spec... oh, my god. I've gotta blog about this. It's, like, ninety percent [about the type system]. It's the biggest type system you've ever seen in your life, by 5x. Not by an order of magnitude, but man! There are type types, and type type types; there's complexity...
+
+They have this concept called complexity complexity<T> Meaning it's not just complexity; it's not just complexity-complexity: it's parameterized complexity-complexity. (mild laughter) OK? Whoo! I mean, this thing has types on its types on its types. It's gnarly.
+
+I've got this Ph.D. languages intern whose a big Haskell fan, and [surprisingly] a big Scheme fan, and an ML fan. [But especially Haskell.] He knows functional programming, he knows type systems. I mean, he's an expert.
+
+He looked at Scala yesterday, and he told me: "I'm finding this rather intimidating."
+
+I'm like, "THAT sounds like it's gonna take off!" (loud laughter) Oh yeah!
+
+But the funny thing about Scala, the really interesting thing — you guys are the first to hear my amazing insight on this, OK? — is: it's put the Java people in a dilemma. There's a reeeeeeeal problem.
+
+The problem is, the Java people say, "Well, dynamic languages, you know, suck, because they don't have static types." Which is kind of circular, right? But what they mean, is they say: No good tools, no good performance. But even if you say, look, the tools and performance can get as good, they say, "Well, static types can help you write safer code!"
+
+It's... you guys know about those talismans? The ones, where, "What's it for?" "To keep tigers away"? (some chuckling) Yeah? And you know, people are like, "How do you know it keeps tigers away?" And your reply is: (sneering) "Do you see any tigers around here!?" (minor laughter)
+
+So this is what... OK, so for a long time, for many years... and you know, I've written more Java code than most Java programmers ever will. (Editor's note: nearly 1M lines in production. Ouch.) So trust me. I tried. OK? I'm not just coming in and saying "I don't want to learn Java." No. I know Java as well as the next person.
+
+But I come to them and say, let's do proof by – say, argument by example! You know, an existence proof. IMDB is written in Perl, right? Yahoo! – many of their properties are written in PHP. A lot of Microsoft stuff's written in VB, right? ASP .NET? Amazon.com's portal site is Perl/Mason.
+
+A lot of companies out there are building big, scalable systems – and I mean scalable in the sense of throughput and transactions, stuff like that, but also scalable in terms of human engineering — in these dynamic languages with no static types. [Using nothing more than good engineering principles.]
+
+So... isn't that a demonstration that you don't need the static types to keep those tigers away?
+
+And they're like: "Well! But! What if... what if a tiger came?" (laughter) Right? "People need shotguns in their house in case a bear comes through the door, right?" The Simpsons made fun of that. (laughing continues)
+
+Yeah. So, you know, for a long time, I was like: "Yeah, yeah, yeah. OK. So tigers could come. Fine."
+
+Scala, now, is the tiger that's going to kill Java. Because their [type-talisman] argument now has become a paradox, similar to the Paul Graham Blub Paradox thing, right? Because they're like, "Well, we need static typing in order to engineer good systems. It's simply not possible otherwise."
+
+The Scala people come in and they go: "Your type system suuuuuucks. It's not sound. It's not safe. It's not complete. You're casting your way around it. It doesn't actually prevent this large class of bugs. How many times have you written catch (NullPointerException x) ... in Java? Our type system doesn't allow [things like] that."
+
+Our type system does what you said your type system was doing.
+
+So, therefore, you should be using it! ∴
+
+And the Java people look at it and go: "Wehellll... (cough cough)... I mean, yeah, I mean... (*ahem*)" (running finger under collar, as if sweating profusely) They say, "Welllll... you know... it's awfully... cummmmmbersome... I..."
+
+"We can actually get around the problems in practice that you guys say your type system is solving through Good Engineering Practices."
+
+(laughter begins to grow)
+
+HA!!! (I point accusingly at the audience, and there's more laughter)
+
+Yeah.
+
+So Scala is creating a real problem for [Java's] static typing camp now. Because their last little bastion of why they're using it, the whole tigers argument, they're like, "Ah, well... we... we keep shotguns in our house." [This is what they've been reduced to.]
+
+OK? Yeeeeahhhh...
+
+So back to dynamic languages!
+
+But my point was — from a previous slide actually — it's very interesting. See, I wrote this Rails port, and it wasn't... I never got it to where it was quite as succinct as Rails, because JavaScript has curly braces and a little bit of extra syntactic cruft. But it was close!
+
+And then we used this framework to build this web app internally. It was for external consumption. It's kind of a long story that I won't go into. But we had like 20 engineers on this thing, for close to a year. And we had a huge application. I mean in terms of user functionality: Ajax-enabled pages, server-side persistence stuff... it was a big app.
+
+And it was, like 40,000 lines of code, including the templates and the client-side JavaScript. The whole thing! OK? I mean, you add in unit tests, you know, you add in everything, including build files and stuff, and this thing was up to like, maybe 55,000 lines of code.
+
+Thousand.
+
+I mean, Java programmers would be saying, "We haven't hit 55 million yet. (Looking at feet) But, well... we're gonna." (laughter)
+
+And it's like, I tell 'em that (shaking head), I tell 'em that, and they're like: "Well." (avoiding eye contact)
+
+That's what they say. "Well."
+
+And that's, you know, that's pretty much it. (laughter)
+
+------
+  scala whitespace, implicits... probleme
+  lesbarkeit. wofür npe?
+  http://de.slideshare.net/dgalichet/demystifying-scala-type-system
+  javascript - soviele jobs auch nicht, meh sprache, wiederholungen,
+  nur aus jobgründen, lieber clojure
+  
 * Dienstleistungen
   Verbeamtungen durchgehen
   Prof
@@ -449,7 +553,12 @@ webentwicklung mit erlang
   sie ist sich das essen nicht wert
   meine ansicht: entweder klappt job (eher nicht) oder klinik
   praktikum, studium, gastfamilie geben alle keine erfolgserlebnisse
-  
+
+  hallus, wasser, trunkenheit, auf raten
+
+  mehr verantwortung, klinik, selbstschädigend, irreversibel
+  post traumatic stress disziplin tier job
+
 * Anforderungen Freundin
   Wenig hobbies, entspannt
   Denkerin
