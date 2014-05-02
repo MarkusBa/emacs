@@ -310,3 +310,4 @@ User buffers are those whose name does not start with *."
                '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
 
 (fullscreen)
+(shell)

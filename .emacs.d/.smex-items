@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- fullscreen
- god-mode
  package-list-packages
  package-install
  eval-region
  w3m
  global-font-lock-mode
+ sql-mode
+ paredit-mode
 )
 
 ;; ----- smex-data -----
