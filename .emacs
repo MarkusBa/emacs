@@ -336,7 +336,13 @@ User buffers are those whose name does not start with *."
       (erc :server "irc.freenode.net" :port 6667 :nick "MarkusX" :full-name "Markus" :password "mark" )
       )))
 
-
+;; Smex
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; switch to ERC with Ctrl+c i
 (global-set-key (kbd "C-c i") 'djcb-erc-start-or-switch) ;; ERC  
@@ -348,6 +354,7 @@ User buffers are those whose name does not start with *."
 (global-set-key "\C-cp" 'paredit-mode)
 (global-set-key "\C-cd" 'dired)
 (global-set-key "\C-cc" 'global-font-lock-mode)
-
+(global-set-key "\C-cb" 'ido-switch-buffer)
+(global-set-key (kbd "<f8>") 'ido-switch-buffer)   
 
 (fullscreen)

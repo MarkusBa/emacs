@@ -1,21 +1,21 @@
 
 ;; ----- smex-history -----
 (
- fullscreen
- load-file
+ ido-switch-buffer
  package-list-packages
  package-install
+ describe-key
+ load-file
  eval-region
  w3m
- global-font-lock-mode
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 9)
+ (package-install . 10)
  (nrepl . 1)
  (org-mode . 4)
- (package-list-packages . 13)
+ (package-list-packages . 14)
  (nrepl-jack-in . 10)
  (ielm . 1)
  (paredit-mode . 7)
@@ -39,4 +39,6 @@
  (god-mode . 2)
  (fullscreen . 4)
  (load-file . 3)
+ (ido-switch-buffer . 9)
+ (describe-key . 3)
 )
