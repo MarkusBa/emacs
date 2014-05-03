@@ -354,6 +354,39 @@ User buffers are those whose name does not start with *."
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
+(setq org-agenda-files (list "~/org/work.org"
+                             "~/org/home.org"))
+
+(setq org-default-notes-file (concat org-directory "/org/notes.org"))
+(define-key global-map "\C-cc" 'org-capture)
+
+     (setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
+             "* TODO %?\n  %i\n  %a")
+        ("j" "Journal" entry (file+datetree "~/org/journal.org")
+             "* %?\nEntered on %U\n  %i\n  %a")))
+
+(require 'recentf)
+ 
+;; get rid of `find-file-read-only' and replace it with something
+;; more useful.
+(global-set-key (kbd "C-x C-r") 'ido-recentf-open)
+ 
+;; enable recent files mode.
+(recentf-mode t)
+ 
+; 50 files ought to be enough.
+(setq recentf-max-saved-items 50)
+ 
+(defun ido-recentf-open ()
+  "Use `ido-completing-read' to \\[find-file] a recent file"
+  (interactive)
+  (if (find-file (ido-completing-read "Find recent file: " recentf-list))
+      (message "Opening file...")
+    (message "Aborting")))
+
+
+
 ;; switch to ERC with Ctrl+c i
 (global-set-key (kbd "C-c i") 'djcb-erc-start-or-switch) ;; ERC  
 (global-set-key "\C-cn" 'next-user-buffer)
@@ -363,11 +396,15 @@ User buffers are those whose name does not start with *."
 (global-set-key "\C-cv" 'evil-mode)
 (global-set-key "\C-cp" 'paredit-mode)
 (global-set-key "\C-cd" 'dired)
-(global-set-key "\C-cc" 'global-font-lock-mode)
+(global-set-key "\C-cg" 'global-font-lock-mode)
 (global-set-key "\C-cb" 'ido-switch-buffer)
 (global-set-key (kbd "<f8>") 'ido-switch-buffer)   
 (global-set-key [f11] 'fullscreen)
-(global-set-key "\C-cm" 'list-matching-lines)
-
+(global-set-key "\C-cf" 'list-matching-lines)
+(global-set-key "\M-o" 'other-window)
+(global-set-key [f2] 'rgrep)
+(global-set-key [f1] 'occur)
+(global-set-key "\C-x\C-m" 'execute-extended-command)
+(global-set-key "\C-c\C-m" 'execute-extended-command)
 
 (fullscreen)
