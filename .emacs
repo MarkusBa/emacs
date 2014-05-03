@@ -350,7 +350,7 @@ User buffers are those whose name does not start with *."
 (global-set-key "\C-cs" 'shell)
 (global-set-key "\C-cq" 'sql-mode)
 (global-set-key "\C-cj" 'jde-mode)
-(global-set-key "\C-cl" 'evil-mode)
+(global-set-key "\C-cv" 'evil-mode)
 (global-set-key "\C-cp" 'paredit-mode)
 (global-set-key "\C-cd" 'dired)
 (global-set-key "\C-cc" 'global-font-lock-mode)
