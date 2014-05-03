@@ -338,9 +338,11 @@ User buffers are those whose name does not start with *."
 
 (setq confirm-nonexistent-file-or-buffer nil)
 
-  ;; integrate copy/paste with X
-  (setq x-select-enable-clipboard t)
-  (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
+;; integrate copy/paste with X
+(setq x-select-enable-clipboard t)
+(setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
+
+(require 'anything-grep)
 
 ;; switch to ERC with Ctrl+c i
 (global-set-key (kbd "C-c i") 'djcb-erc-start-or-switch) ;; ERC  
@@ -355,5 +357,7 @@ User buffers are those whose name does not start with *."
 (global-set-key "\C-cb" 'ido-switch-buffer)
 (global-set-key (kbd "<f8>") 'ido-switch-buffer)   
 (global-set-key [f11] 'fullscreen)
+(global-set-key "\C-cl" 'list-matching-lines)
+
 
 (fullscreen)
