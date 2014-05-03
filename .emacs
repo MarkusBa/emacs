@@ -343,6 +343,16 @@ User buffers are those whose name does not start with *."
 (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
 
 (require 'anything-grep)
+(require 'undo-tree)
+
+;minibuffer hisT
+(savehist-mode 1)
+
+
+(require 'org)
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
 
 ;; switch to ERC with Ctrl+c i
 (global-set-key (kbd "C-c i") 'djcb-erc-start-or-switch) ;; ERC  
@@ -357,7 +367,7 @@ User buffers are those whose name does not start with *."
 (global-set-key "\C-cb" 'ido-switch-buffer)
 (global-set-key (kbd "<f8>") 'ido-switch-buffer)   
 (global-set-key [f11] 'fullscreen)
-(global-set-key "\C-cl" 'list-matching-lines)
+(global-set-key "\C-cm" 'list-matching-lines)
 
 
 (fullscreen)
