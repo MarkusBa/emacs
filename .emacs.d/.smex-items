@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ fullscreen
+ load-file
  package-list-packages
  package-install
  eval-region
  w3m
  global-font-lock-mode
- sql-mode
- paredit-mode
 )
 
 ;; ----- smex-data -----
@@ -35,7 +35,8 @@
  (w3m . 2)
  (eval-region . 5)
  (insert-p-tag . 1)
- (next-user-buffer . 1)
+ (next-user-buffer . 2)
  (god-mode . 2)
- (fullscreen . 1)
+ (fullscreen . 4)
+ (load-file . 3)
 )

@@ -257,13 +257,6 @@
         (append '(("\\.java\\'" . jde-mode)) auto-mode-alist))
 
 
- (global-set-key "\C-cs" 'shell)
- (global-set-key "\C-cq" 'sql-mode)
- (global-set-key "\C-cj" 'jde-mode)
- (global-set-key "\C-cl" 'evil-mode)
- (global-set-key "\C-cp" 'paredit-mode)
- (global-set-key "\C-cd" 'dired)
- (global-set-key "\C-cc" 'global-font-lock-mode)
 
 ;; disable color crap
 (global-font-lock-mode nil)
@@ -292,6 +285,8 @@ User buffers are those whose name does not start with *."
     (while (and (string-equal "*" (substring (buffer-name) 0 1)) (< i 20))
       (setq i (1+ i)) (previous-buffer) )))
 
+
+
 (require 'god-mode)
 (global-set-key (kbd "<escape>") 'god-mode-all)
 (defun my-update-cursor ()
@@ -309,5 +304,50 @@ User buffers are those whose name does not start with *."
        (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
                '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
 
-(fullscreen)
 (shell)
+
+    (defun kill-other-buffers ()
+      "Kill all other buffers."
+      (interactive)
+      (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
+
+;;Irc client
+(require 'erc)
+
+(erc-autojoin-mode t)
+(setq erc-autojoin-channels-alist
+  '((".*\\.freenode.net" "#emacs" "#clojure" "#lisp" "#ubuntu-de" "##java")
+     ))
+
+(erc-track-mode t)
+(setq erc-track-exclude-types '("JOIN" "NICK" "PART" "QUIT" "MODE"
+
+                                 "324" "329" "332" "333" "353" "477"))
+;; don't show any of this
+(setq erc-hide-list '("JOIN" "PART" "QUIT" "NICK"))
+
+(defun djcb-erc-start-or-switch ()
+  "Connect to ERC, or switch to last active buffer"
+  (interactive)
+  (if (get-buffer "irc.freenode.net:6667") ;; ERC already active?
+
+    (erc-track-switch-buffer 1) ;; yes: switch to last active
+    (when (y-or-n-p "Start ERC? ") ;; no: maybe start ERC
+      (erc :server "irc.freenode.net" :port 6667 :nick "MarkusX" :full-name "Markus" :password "mark" )
+      )))
+
+
+
+;; switch to ERC with Ctrl+c i
+(global-set-key (kbd "C-c i") 'djcb-erc-start-or-switch) ;; ERC  
+(global-set-key "\C-cn" 'next-user-buffer)
+(global-set-key "\C-cs" 'shell)
+(global-set-key "\C-cq" 'sql-mode)
+(global-set-key "\C-cj" 'jde-mode)
+(global-set-key "\C-cl" 'evil-mode)
+(global-set-key "\C-cp" 'paredit-mode)
+(global-set-key "\C-cd" 'dired)
+(global-set-key "\C-cc" 'global-font-lock-mode)
+
+
+(fullscreen)

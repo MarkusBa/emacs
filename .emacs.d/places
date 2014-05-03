@@ -1,5 +1,6 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/markus/.emacs" . 9302)
+(("/home/markus/.emacs" . 9348)
+ ("/home/markus/git/clojure/clojurebook/project.clj" . 1137)
  ("/home/markus/.emacs.d/elpa/god-mode-2.12.0/god-mode-autoloads.el" . 547)
  ("/home/markus/workspace/crudbook/prj.el" . 219)
  ("/home/markus/.emacs.d/elpa/malabar-mode-20140307.1420/malabar-mode-autoloads.el" . 662)
