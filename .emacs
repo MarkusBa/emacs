@@ -406,5 +406,7 @@ User buffers are those whose name does not start with *."
 (global-set-key [f1] 'occur)
 (global-set-key "\C-x\C-m" 'execute-extended-command)
 (global-set-key "\C-c\C-m" 'execute-extended-command)
+(global-set-key "\C-f" 'scroll-up)
+(global-set-key "\C-b" 'scroll-down)
 
 (fullscreen)
