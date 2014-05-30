@@ -1,0 +1,11 @@
+
+* Test
+** Test
+*** DONE Test
+    CLOSED: [2014-05-03 Sa 12:04]
+*** TODO
+    [[http://www.google.de][google]]
+*** TODO
+*** TODO
+*** TODO 
+[[file:~/.emacs::(define-key%20global-map%20"\C-cl"%20'org-store-link)][emacs init]]

@@ -3,7 +3,7 @@
 ;; ----- ido-last-directory-list -----
 (
  ("/home/markus/workspace/" . "crudbook/")
- ("/home/markus/.emacs.d/" . "scripts/")
+ ("/home/markus/.emacs.d/" . "url/")
  ("/home/markus/Clojure/hw/app/src/" . "hw/")
  ("/home/markus/Clojure/hw/app/" . "templates/")
  ("/home/markus/Clojure/hw/" . "app/")
@@ -11,11 +11,12 @@
  ("/home/markus/workspace/seminarverwaltung/" . "src/")
  ("/home/markus/Clojure/guestbook/src/" . "guestbook/")
  ("/home/markus/Clojure/guestbook/" . "src/")
- ("/home/markus/" . "Downloads/")
+ ("/home/markus/" . "org/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/markus/org/"
  "/home/markus/"
  "/home/markus/Downloads/Buch/"
  "/home/markus/Downloads/"
@@ -27,21 +28,31 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "todo.org"
  ".emacs"
+ "Test.org"
+ "home.org"
+ "work.org"
+ "heise.org"
  "buch.org"
  "buch"
  "Ideen.org"
  "start.cljs"
- "hw.html"
- "rendering.cljs"
- "handler.clj"
- "test2"
- "Ideen"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/markus/" (21348 34422 529432 413000) ".drip/" "snippet" ".ICEauthority" ".gtkrc-2.0-gnome-color-chooser" ".cpan/" "git/" "Racket/" ".icons/" "pmd-eclipse.log" ".filezilla/" "#Kopie von .emacs#" "t.pl" ".gconf/" "dwhelper/" ".gstreamer-0.10/" ".m2/" "Downloads/" "svn/" ".i3/" ".mysql_history" ".dmrc" "../" ".Xdefaults" ".viminfo" ".elinks/" ".ivy2/" ".dmrc2" ".ghc/" "workspace/" "#.emacs#" ".gtk-bookmarks" "shared/" ".gnome2_private/" "gnome-terminal-colors-solarized/" "lisp/" ".gnome-color-chooser/" ".IntelliJIdea13/" ".emacs" ".Xauthority" ".dbus/" ".zshrc.local.save" ".xchat2/" "Scala/" ".mysql/" ".config/" ".zshrc.local" ".RapidSVN" "Dokumente/" ".vim/" ".i3.BAK/" ".XmodmapDe" ".zcompdump" ".ssh/" ".java/" ".vimperator/" ".emacs.d/" "sketchbook/" ".cabal/" ".IdeaIC13/" "dbext_sql_history.txt" ".mozilla/" ".local/" ".thumbnails/" ".gtkrc-2.0.no" "vimbackup/" ".sbcl_history" "local/" ".cache/" ".gtkrc-2.0.bak" ".thunderbird/" ".vimrc" ".conkeror.mozdev.org/" " " ".bash_logout" "xfcescript" ".XmodmapXfce" ".zshrc.local.save.2" "bin/" ".zshrc.local.save.1" ".xsession-errors" "temp/" "xulrunner/" ".Xmodmap" ".racket_history" "./" ".sbcl/" ".pki/" ".xinitrc.bak" ".gnupg/" ".gitconfig" "Kopie von .emacs" ".zsh_history" ".zshrc" "Kindle/" "Arbeitsfläche/" "guake-colors-solarized/" ".racket/" "haskell/" ".purple/" "missfont.log" ".dircolors.BAK" ".Xmodmap.Space" ".bash_history" ".clisprc" ".sbt/" ".lein/" ".bashrc" "Clojure/" ".gtkrc-2.0.bad" ".scala_history" "telefonliste/" "nohup.out" "Java/" ".VirtualBox/" ".avogadro/" "vimb/" "macro/" ".adobe/" "quicklisp/" "Bilder/" "space.sh" ".macromedia/" ".eclipse/" ".subversion/" ".Xmodmap.Neoangepasst" ".zdirs" "VirtualBox VMs/" ".w3m/" ".lesshst" ".profile" ".zshrc.local.swp" ".xsession-errors.old" ".arduino/" "tst.pl" "Kopie von .bashrc" ".xscreensaver" ".gnome2/" ".xbindkeysrc")
+ ("/home/markus/org/" (21348 58752 325371 818000) "../" "journal.org" "gtd.org" "./" "#Test.org#" "Test.org" "home.org" "work.org")
+
+ ("/home/markus/" (21358 25765 862468 491000) "racket/" ".drip/" "snippet" ".ICEauthority" ".gtkrc-2.0-gnome-color-chooser" ".cpan/" "git/" "Racket/" ".icons/" "pmd-eclipse.log" ".filezilla/" "#Kopie von .emacs#" "t.pl" ".gconf/" "dwhelper/" ".gstreamer-0.10/" ".m2/" "Downloads/" "svn/" ".i3/" ".mysql_history" ".dmrc" "../" ".Xdefaults" ".viminfo" ".elinks/" ".ivy2/" ".dmrc2" ".ghc/" "workspace/" "org/" ".gtk-bookmarks" "shared/" ".gnome2_private/" "gnome-terminal-colors-solarized/" "lisp/" ".gnome-color-chooser/" ".IntelliJIdea13/" ".emacs" ".Xauthority" ".dbus/" ".zshrc.local.save" ".xchat2/" "Scala/" ".mysql/" ".config/" ".zshrc.local" ".RapidSVN" "Dokumente/" ".vim/" ".i3.BAK/" ".XmodmapDe" ".zcompdump" ".ssh/" ".java/" ".vimperator/" ".emacs.d/" "sketchbook/" ".cabal/" ".IdeaIC13/" "dbext_sql_history.txt" ".mozilla/" ".local/" ".thumbnails/" ".gtkrc-2.0.no" "vimbackup/" ".sbcl_history" "local/" ".cache/" ".gtkrc-2.0.bak" ".thunderbird/" ".vimrc" ".conkeror.mozdev.org/" " " ".bash_logout" "xfcescript" ".XmodmapXfce" ".zshrc.local.save.2" "bin/" ".zshrc.local.save.1" ".xsession-errors" "temp/" "xulrunner/" ".Xmodmap" ".racket_history" "./" ".sbcl/" ".pki/" ".xinitrc.bak" ".gnupg/" ".gitconfig" "Kopie von .emacs" ".zsh_history" ".zshrc" "Kindle/" "Arbeitsfläche/" "guake-colors-solarized/" ".racket/" "haskell/" ".purple/" "missfont.log" ".dircolors.BAK" ".Xmodmap.Space" ".bash_history" ".clisprc" ".sbt/" ".lein/" ".bashrc" "Clojure/" ".gtkrc-2.0.bad" ".scala_history" "telefonliste/" "nohup.out" "Java/" ".VirtualBox/" ".avogadro/" "vimb/" "macro/" ".adobe/" "quicklisp/" "Bilder/" "space.sh" ".macromedia/" "test.tst" ".eclipse/" ".subversion/" ".Xmodmap.Neoangepasst" ".zdirs" "VirtualBox VMs/" ".w3m/" ".lesshst" ".profile" ".zshrc.local.swp" ".xsession-errors.old" ".arduino/" "tst.pl" "Kopie von .bashrc" ".xscreensaver" ".gnome2/" ".xbindkeysrc")
+
+ ("/home/markus/.w3m/" (21349 3654 723368 585000) ".arrived" "../" ".sessions" ".cookie" "./" "history")
+
+ ("/home/markus/telefonliste/" (21114 13837 450265 524000) "../" "./" "telefonliste")
+
+ ("/home/markus/.emacs.d/url/" (21347 65358 553851 28000) "../" "./" "cookies")
+
+ ("/home/markus/.emacs.d/" (21348 40400 142399 317000) "ac-comphist.dat" "places" "../" "semanticdb/" "ido.last" "session.205f64992-9cff-4e1a-b89e-f17c308183d1" "games/" "abbrev_defs" "auto-save-list/" "jdee-2.4.1/" "scripts/" "./" "backups/" ".smex-items" "elpa/" "jdee/" "recentf" "srecode-map.el" "url/" "sql/")
 
  ("/home/markus/Downloads/" (21329 13486 768071 647000) "mkyong/" "hs5_-_2013-08-24_16_30_-_rest_fur_ruhelose_-_christian_schmitz_-_1222.webm" "Burke_et_al-NIL_Reference_Manual_0286-1984.pdf" "http:_localhost:8080_.html" "Excerpt from the Winds of Winter | George R.R. Martin-Dateien/" "Semantic web stack - ANSWERS.html" "Liniennetzplan_2013.pdf" "theme-1013.xml" "theme-1115.xml" "Eric Rochester — Aggregating Semantic Web Data-Dateien/" "eclipseplugins/" "eintrag_edit.xhtml" "netbeans-7.4-javaee-linux.sh" "eclipsePlugin-2.0.3.20131105-14951-source.zip" "peepcode-emacs-in-5-demo.mov" "bash.pdf" "Buch/" "Ideen(1)" "Excerpt from the Winds of Winter | George R.R. Martin.html" "code/" "image.png" "full/" "refc_lisp.pdf" "edu.umd.cs.findbugs.plugin.eclipse_2.0.3.20131105-14951.zip" "Semantic web stack - ANSWERS-Dateien/" "RepRap_3D_Drucker_Workshop_Dingfabrik_Köln_Zeitraffer_03_04_12_2011--LgYGAJaJwk.mp4" "bla" "delorean_light_theme_3_6___vs_1_01_by_killhellokitty-d5pp1w3.zip" "delorean_dark_3_10_beta_6_04052014_by_killhellokitty-d6raty7.zip" "clsql-manual-latest.pdf" "http:_localhost:8080_-Dateien/" "ClojureProgramming-master.zip" "xbindkeysrc" "app-tutorial-2.0.10/" "Learn to Program in Lisp. One Game at a Time - C.Barski.pdf" "Arnold Schwarzenegger - 6 Regeln des Erfolges | Bodybuilding 2.0.html" "emacs.pdf" "ArduinoProjekteSketchCode_V1.2/" "Clojure in a bank | Applying a functional language to a large organisation.html" "ClojureProgramming-master/" "image2.png" "JavaServerFaces/" "minimal.jar" "dienstleistungmanager.xhtml" "continuous-deployment-conj-slides.pdf" "Grundlagen Eingebetteter Systeme.tar.gz" "fritzing-0.8.5b.linux.AMD64/" "video.ogg" "ocaml-book.pdf" "dbext_2000.zip" "cl/" "scala-SDK-3.0.2-vfinal-2.10-linux.gtk.x86_64.tar.gz" "How To Build A Mobile Website | Smashing Mobile.html" "app-tutorial-2.0.10.zip" "Kram-master/" "Ideen.org" "dbext_2000/" "apache-tomcat-7.0.47/" "alt/" "LightTableLinux64.tar.gz" "delorean-light-theme-3.6/" "c117_java_-_2013-08-24_17_45_-_polyglot_java_-_programmieren_mit_xtend_-_andre_arnold_-_1144.webm" "TSA-Personalisierungsschnittstelle.doc" "hs4_-_2013-08-25_16_30_-_der_mensch_in_artgerechter_haltung_-_christoph_baudson_-_1224.mp4" "357(1).pdf" "357.pdf" "#test.sql#" "jdee-2.4.1/" "Arduino - Learning.pdf" "idea-IU-135.480/" "F. Cesarini, S. Thompson. Erlang Programming.pdf" "Pedestal Documentation - Application Overview.html" "FindBugs.jar" "9039404.pdf" "ideaIU-13.1.1.tar.gz" "AGB.pdf" "JSF2.0-hello-world-example-2.1.7.zip" "arduino-1.0.5/" "jdee-bin-2.4.1.tar.bz2" "tileinput.xhtml" "delorean-dark-3.10/" "test.sql" "bilder/" "zsh_a4.pdf" "SP_ProgrammingForth.pdf" "gist6002224-5624a7d27ce23d96268e2e9b1c00e343184ba241.tar.gz" "Grundlagen Eingebetteter Systeme/" "findbugs-noUpdateChecks-2.0.3-rc1.tar.gz" "gist6002224-5624a7d27ce23d96268e2e9b1c00e343184ba241/" "onlisp.pdf" "verwaltungsfachangestellte - und was danach?????? [Seite 2] - Studis Online-Forum.html" "Eric Rochester — Aggregating Semantic Web Data.html" "978-3-525-70147-8.pdf" "735060_4280617860291_257903020_n.jpg" "main-e.pdf" "java - Rolling logback logs on filesize and time - Stack Overflow.html" "pmd-bin-5.0.5.zip" "dswdcloj-code.tgz" "Ideen~" "World Cognition By Programming: Setting up Emacs for Clojure programming.html" "0016.pdf" "sbt.deb" "r5rs.pdf" "LightTable/" "ws/" "documents/" "web-development-with-clojure_b4_0.pdf" "es ist mir einfach zuviel, jeden tag arbeiten zu gehen..html" "ArduinoProjekteSketchCode_V1.2.zip" "jena-2.11.0/" "The_Joy_of_Clojure__v9_MEAP.pdf" "sqlcomplete.vim" "Froscon/" "ThinkRelevance-027-tim-ewald.mp3" "hide.jar" "roadmap-softwareengineer.JPG" "http:_localhost:8080_broadway.js" "functional-programming-in-java_b8_0.pdf" "datomic-free-0.8.4218/" "tomcat-7.0-doc/" "c116_lisp_-_2013-08-24_14_00_-_clojure_introduction_workshop_-_waldemar_schwan_-_1251.mp4" "../" "./")
 
@@ -52,8 +63,6 @@
  ("/home/markus/.emacs.d/scripts/" (21284 61370 996469 281000) "converteclipsepr" "../" "converteclipsepr~" "./" "EmacsWiki: Jdee-Eclipse-integration.html")
 
  ("/home/markus/workspace/" (21258 8690 383731 972000) "../" "inttest/" "guestbook/" "seminarverwaltung/" "VersionPlusPlus/" "rdf/" "helloworld/" "crudbook/" "crudbook.tar.gz" "test/" "./" "versionplus/" "RemoteSystemsTempFiles/" "ws/" "Servers/" ".metadata/")
-
- ("/home/markus/.emacs.d/" (21284 61287 780472 807000) "ac-comphist.dat" "places" "../" "ido.last" "session.205f64992-9cff-4e1a-b89e-f17c308183d1" "games/" "auto-save-list/" "jdee-2.4.1/" "scripts/" "./" "backups/" ".smex-items" "elpa/" "jdee/" "sql/")
 
  ("/home/markus/Downloads/Buch/" (21258 13302 940356 64000) "buch" "../" "./")
 

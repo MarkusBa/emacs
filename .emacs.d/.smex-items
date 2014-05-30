@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- ido-switch-buffer
+ eval-buffer
  package-list-packages
- package-install
- describe-key
- load-file
- eval-region
+ butterfly
+ rgrep
  w3m
+ load-file
+ scroll-up
 )
 
 ;; ----- smex-data -----
@@ -15,7 +15,7 @@
  (package-install . 10)
  (nrepl . 1)
  (org-mode . 4)
- (package-list-packages . 14)
+ (package-list-packages . 26)
  (nrepl-jack-in . 10)
  (ielm . 1)
  (paredit-mode . 7)
@@ -27,18 +27,29 @@
  (make-directory . 1)
  (sql-set-product . 1)
  (jde-mode . 4)
- (eval-buffer . 1)
+ (eval-buffer . 6)
  (jde-int-find-and-import-projects . 1)
  (dired . 1)
  (ido-mode . 2)
  (global-font-lock-mode . 1)
- (w3m . 2)
+ (w3m . 4)
  (eval-region . 5)
  (insert-p-tag . 1)
  (next-user-buffer . 2)
  (god-mode . 2)
  (fullscreen . 4)
- (load-file . 3)
+ (load-file . 6)
  (ido-switch-buffer . 9)
  (describe-key . 3)
+ (anything-grep . 2)
+ (grep . 1)
+ (list-matching-lines . 1)
+ (customize . 1)
+ (evil-mode . 1)
+ (rgrep . 2)
+ (occur . 5)
+ (forward-page . 1)
+ (scroll-down . 2)
+ (scroll-up . 1)
+ (butterfly . 2)
 )

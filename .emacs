@@ -316,7 +316,7 @@ User buffers are those whose name does not start with *."
 
 (erc-autojoin-mode t)
 (setq erc-autojoin-channels-alist
-  '((".*\\.freenode.net" "#emacs" "#clojure" "#lisp" "#ubuntu-de" "##java")
+  '((".*\\.freenode.net" "#emacs" "#clojure" "#lisp" "#ubuntu-de" "##java" "#nixos")
      ))
 
 (erc-track-mode t)
@@ -333,8 +333,10 @@ User buffers are those whose name does not start with *."
 
     (erc-track-switch-buffer 1) ;; yes: switch to last active
     (when (y-or-n-p "Start ERC? ") ;; no: maybe start ERC
-      (erc :server "irc.freenode.net" :port 6667 :nick "MarkusX" :full-name "Markus" :password "mark" )
+      (erc :server "irc.freenode.net" :port 6667 :nick "MarkusBarthlen" :full-name "Markus" :password "mark" )
       )))
+
+;; alt: MarkusX
 
 (setq confirm-nonexistent-file-or-buffer nil)
 
