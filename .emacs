@@ -75,8 +75,20 @@
 ;;(load "/usr/share/emacs24/site-lisp/haskell-mode/haskell-mode.elc")
 
 ;; haskell
-;;(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode 
-;;   'turn-on-haskell-indent)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode 'turn-on-haskell-indent)
+(add-hook 'haskell-mode-hook 'my-haskell-mode-hook)
+
+(defun my-haskell-mode-hook ()
+   (haskell-indentation-mode 1) ;; turn off, just to be sure
+   (haskell-indent-mode -1)       ;; turn on indent-mode
+
+   ;; further customisations go here.  For example:
+   (setq locale-coding-system 'utf-8 )
+   (flyspell-prog-mode)  ;; spell-checking in comments and strings
+   ;; etc.      
+
+)
+
 
 ;; evil
 ;;(add-to-list 'load-path "~/.emacs.d/elpa/evil-1.0.6")
