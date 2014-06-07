@@ -84,7 +84,7 @@
 
    ;; further customisations go here.  For example:
    (setq locale-coding-system 'utf-8 )
-   (flyspell-prog-mode)  ;; spell-checking in comments and strings
+   ;;(flyspell-prog-mode)  ;; spell-checking in comments and strings
    ;; etc.      
 
 )
@@ -328,7 +328,7 @@ User buffers are those whose name does not start with *."
 
 (erc-autojoin-mode t)
 (setq erc-autojoin-channels-alist
-  '((".*\\.freenode.net" "#emacs" "#clojure" "#lisp" "#ubuntu-de" "##java" "#nixos")
+  '((".*\\.freenode.net" "#emacs" "#clojure" "#lisp" "#ubuntu-de" "##java" "#nixos" "#haskell")
      ))
 
 (erc-track-mode t)
